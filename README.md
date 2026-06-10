@@ -10,11 +10,11 @@
 
 ## 快速开始
 
-1. 用 Obsidian 打开本目录。
-2. 安装并启用 `.obsidian/community-plugins.json` 中列出的社区插件。
-3. 从 `!_home.md` 开始阅读工作流说明。
-4. 用 `templater/` 中的模板创建概念、定理、证明、错题、学习会话和日报。
-5. 将 `.codex/skills` 或 `.claude/skills` 复制到对应 AI 工具的 skills 目录，或直接保留在 vault 内作为方法说明。
+1. 用 Obsidian 打开本目录作为 vault。
+2. 让 Codex / Claude 自动配置：AI 会读取 vault 内已有的 `.claude/skills/` 或 `.codex/skills/` 并自行加载。无需手动复制 skills 文件。详见 [自动配置说明](docs/auto-setup-guide.md)。
+3. 安装并启用 `.obsidian/community-plugins.json` 中列出的社区插件。
+4. 从 `!_home.md` 开始阅读工作流说明。
+5. 用 `templater/` 中的模板创建概念、定理、证明、错题、学习会话和日报。
 
 ## 推荐插件
 
