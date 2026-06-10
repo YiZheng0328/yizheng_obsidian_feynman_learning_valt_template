@@ -1,0 +1,4 @@
+interface:
+  display_name: "Math Feynman Learning"
+  short_description: "Learn math through guided first-principles reasoning"
+  default_prompt: "Use $math-feynman-learning to help me learn probability through Feynman-style reasoning."

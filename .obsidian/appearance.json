@@ -1,0 +1,9 @@
+{
+  "cssTheme": "Obsidian gruvbox",
+  "enabledCssSnippets": [
+    "vault-home",
+    "home-tabs",
+    "tokyo-night"
+  ],
+  "accentColor": "#7c6f64"
+}

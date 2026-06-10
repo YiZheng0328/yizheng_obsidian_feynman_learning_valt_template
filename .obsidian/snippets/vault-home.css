@@ -1,0 +1,152 @@
+.markdown-preview-view.vault-home,
+.markdown-source-view.mod-cm6.vault-home .cm-scroller {
+  --vault-home-accent: var(--interactive-accent);
+  --vault-home-accent-2: var(--link-external-color);
+  --vault-home-bg: var(--background-primary);
+  --vault-home-panel: var(--background-secondary);
+  --vault-home-border: var(--background-modifier-border);
+  --vault-home-muted: var(--text-muted);
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--interactive-accent) 10%, transparent),
+      transparent 220px
+    ),
+    var(--vault-home-bg);
+}
+
+.markdown-preview-view.vault-home .banner-container,
+.markdown-source-view.mod-cm6.vault-home .banner-container {
+  aspect-ratio: 4 / 1;
+  height: auto !important;
+  overflow: hidden;
+}
+
+.markdown-preview-view.vault-home .metadata-container {
+  display: none;
+}
+
+.markdown-preview-view.vault-home .banner-container::after,
+.markdown-source-view.mod-cm6.vault-home .banner-container::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 38%;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    var(--background-primary)
+  );
+}
+
+.markdown-preview-view.vault-home .banner-image,
+.markdown-source-view.mod-cm6.vault-home .banner-image {
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+
+.markdown-preview-view.vault-home h1,
+.markdown-source-view.mod-cm6.vault-home .HyperMD-header-1 {
+  color: var(--h1-color);
+  font-size: 2.15em;
+  letter-spacing: 0;
+}
+
+.markdown-preview-view.vault-home h2,
+.markdown-source-view.mod-cm6.vault-home .HyperMD-header-2 {
+  color: var(--h2-color);
+  border-bottom: 1px solid var(--vault-home-border);
+  padding-bottom: 0.28rem;
+}
+
+.markdown-preview-view.vault-home .callout[data-callout="summary"] {
+  border-color: var(--vault-home-border);
+  background: linear-gradient(
+    135deg,
+    color-mix(in srgb, var(--interactive-accent) 12%, transparent),
+    color-mix(in srgb, var(--link-external-color) 10%, transparent)
+  );
+  border-radius: 8px;
+}
+
+.vault-home-subjects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin: 1.1rem 0 1.7rem;
+}
+
+.vault-home-card {
+  display: flex;
+  min-height: 96px;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid var(--vault-home-border);
+  border-radius: 8px;
+  padding: 14px;
+  color: var(--text-normal);
+  background: var(--vault-home-panel);
+  box-shadow: 0 8px 24px color-mix(in srgb, var(--text-normal) 8%, transparent);
+  text-decoration: none;
+}
+
+.vault-home-card:hover {
+  border-color: color-mix(in srgb, var(--interactive-accent) 50%, var(--vault-home-border));
+  transform: translateY(-1px);
+}
+
+.vault-home-card span {
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.vault-home-card small {
+  color: var(--vault-home-muted);
+  line-height: 1.45;
+}
+
+.markdown-preview-view.vault-home table {
+  overflow: hidden;
+  border: 1px solid var(--vault-home-border);
+  border-radius: 8px;
+}
+
+.markdown-preview-view.vault-home thead {
+  background: color-mix(in srgb, var(--interactive-accent) 10%, transparent);
+}
+
+.markdown-preview-view.vault-home code,
+.markdown-preview-view.vault-home pre {
+  border-radius: 8px;
+}
+
+.markdown-preview-view.vault-home .heatmap-calendar-graph {
+  margin: 0.35rem 0 1.35rem;
+}
+
+.markdown-preview-view.vault-home .heatmap-calendar-boxes .heatmap-calendar-content {
+  display: none;
+}
+
+.markdown-preview-view.vault-home .heatmap-calendar-boxes .hasData:hover .heatmap-calendar-content {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  bottom: calc(100% + 6px);
+  transform: translateX(-50%);
+  width: max-content;
+  max-width: 120px;
+  border: 1px solid var(--vault-home-border);
+  border-radius: 6px;
+  padding: 3px 6px;
+  color: var(--text-normal);
+  background: var(--background-primary);
+  box-shadow: 0 6px 18px color-mix(in srgb, var(--text-normal) 16%, transparent);
+  font-size: 11px;
+  line-height: 1.3;
+  pointer-events: none;
+}

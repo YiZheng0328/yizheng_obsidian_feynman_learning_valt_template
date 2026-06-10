@@ -1,0 +1,22 @@
+# Local Obsidian state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/plugins/
+
+# Raw and private materials
+900_raw_sources/**
+!900_raw_sources/README.md
+000_inbox/**
+!000_inbox/README.md
+
+# AI sessions and local tool state
+.claudian/
+.marscode/
+*.log
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+

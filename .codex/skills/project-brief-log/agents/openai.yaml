@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Brief Log"
+  short_description: "Archive project change briefs by timeline"
+  default_prompt: "Use $project-brief-log to archive this Cursor change brief into the project's development log."

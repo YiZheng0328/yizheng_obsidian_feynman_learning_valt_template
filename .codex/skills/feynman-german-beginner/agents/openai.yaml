@@ -1,0 +1,4 @@
+interface:
+  display_name: "Feynman German Beginner"
+  short_description: "Learn beginner German through guided explanation"
+  default_prompt: "Use $feynman-german-beginner to help me learn sein through Feynman-style explanation."

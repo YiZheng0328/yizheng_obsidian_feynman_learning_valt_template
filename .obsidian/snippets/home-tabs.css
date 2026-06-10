@@ -1,0 +1,77 @@
+/* ── Home page tab system ── */
+
+.home-tabs {
+  margin-top: 0.8rem;
+}
+
+/* Hide radio input */
+.home-tabs > input[type="radio"] {
+  display: none;
+}
+
+/* ── Tab navigation bar ── */
+
+.home-tabs > .tab-nav {
+  display: flex;
+  gap: 0;
+  border-bottom: 1px solid var(--background-modifier-border);
+  margin-bottom: 1.5rem;
+  overflow-x: auto;
+}
+
+.home-tabs > .tab-nav label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.95em;
+  color: var(--text-muted);
+  border-bottom: 2px solid transparent;
+  margin-bottom: -1px;
+  transition:
+    color 0.15s,
+    border-color 0.15s,
+    background 0.15s;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.home-tabs > .tab-nav label:hover {
+  color: var(--text-normal);
+  background: var(--background-secondary-alt);
+  border-radius: 6px 6px 0 0;
+}
+
+/* Active tab label */
+#tab-learning:checked ~ .tab-nav label[for="tab-learning"],
+#tab-projects:checked ~ .tab-nav label[for="tab-projects"],
+#tab-outputs:checked  ~ .tab-nav label[for="tab-outputs"] {
+  color: var(--text-normal);
+  border-bottom-color: var(--interactive-accent);
+}
+
+/* ── Tab panels – hide by default, show when checked ── */
+
+.tab-panel {
+  display: none;
+}
+
+#tab-learning:checked ~ .learning-panel,
+#tab-projects:checked ~ .projects-panel,
+#tab-outputs:checked  ~ .outputs-panel {
+  display: block;
+}
+
+/* ── Tab icon ── */
+
+.tab-icon {
+  font-size: 1.1em;
+}
+
+/* ── Source mode: scope tab styles to vault-home class ── */
+
+.markdown-source-view.mod-cm6.vault-home .home-tabs > input[type="radio"] {
+  display: none;
+}
