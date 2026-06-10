@@ -26,6 +26,7 @@
 - Iconize：主页图标显示。
 - Git：版本管理。
 - Latex Suite：数学输入增强。
+- Claudian：Claude 与 Obsidian 深度集成，AI 可直接读写、搜索 vault 内容。
 
 ## 仓库结构
 

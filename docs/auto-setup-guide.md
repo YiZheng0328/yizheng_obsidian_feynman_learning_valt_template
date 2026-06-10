@@ -52,7 +52,30 @@ Codex 启动后会读取 `.codex/skills/`，同样直接说：
 2. 选择解压后的目录
 3. Obsidian 会自动读取 `.obsidian/` 下的配置（外观、快捷键、社区插件列表等）
 4. 进入设置 → 社区插件，按列表安装插件
-5. 回到 `!_home.md`，开始学习
+5. **推荐安装 Claudian 插件**（见下方）
+6. 回到 `!_home.md`，开始学习
+
+### 推荐：Claudian 插件
+
+[Claudian](https://github.com/debanjum/claudian) 是一个 Obsidian 社区插件，它让 Claude Code / Claude API 能直接在 Obsidian 中读写笔记、搜索 vault、创建文件，无需在终端和 Obsidian 之间手动复制粘贴。
+
+**安装后，你可以直接在聊天中：**
+
+```text
+在 100_learning/math/ 下创建概念笔记「条件概率」，用概念笔记模板。
+帮我在 vault 里搜索所有包含「中心极限定理」的笔记。
+根据我刚才的解释，把错题复盘追加到 100_learning/math/错题_协方差.md。
+```
+
+**工作流对比：**
+
+| 不装 Claudian | 装了 Claudian |
+|---|---|
+| Claude 生成内容 → 你复制 → 粘贴到 Obsidian | Claude 直接写入笔记 |
+| 你手动搜索 vault → 告诉 Claude 结果 | Claude 直接搜索 vault |
+| 来回切换终端和 Obsidian | 在 Obsidian 或终端一处完成 |
+
+Claudian 让 AI 真正成为 vault 的一部分，而不是一个外部顾问。
 
 ## 4. 验证安装
 
